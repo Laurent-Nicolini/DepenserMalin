@@ -1,0 +1,66 @@
+main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-contact{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display:flex;
+    justify-content: space-between;
+    box-shadow: 1px 1px 15px 6px rgba(0,0,0,0.5);
+    -webkit-box-shadow: 1px 1px 15px 6px rgba(0,0,0,0.5);
+    -moz-box-shadow: 1px 1px 15px 6px rgba(0,0,0,0.5);
+    max-width: inherit;
+    padding: 50px;
+}
+
+.image{
+    align-self: center;
+}
+
+#image{
+    width: 450px;
+    height: 300px;
+    padding: 0;
+}
+
+.contact{
+    width: 70%;
+    padding-left: 50px;
+}
+
+h1, h4, #message{
+    width: 300px;
+}
+
+#message{
+    height: 120px;
+}
+
+h4{
+    text-align: justify;
+}
+
+#name, #email{
+    width: 140px;
+    height: 30px;
+}
+
+#email{
+    margin: 4.5px;
+}
+
+.input{
+    margin-bottom: 10px;
+}
+
+.textarea{
+    margin-bottom: 10px;
+}
+
+button{
+    height: 30px;
+}

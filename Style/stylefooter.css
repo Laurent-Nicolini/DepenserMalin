@@ -1,0 +1,35 @@
+footer{
+    margin-left: 1.5%;
+    padding-bottom: 20px;
+    width: 97%;
+    background: rgb(0, 0, 0);
+    color:white;
+    text-align: left;
+}
+
+.bold{
+    font-weight: bold;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.newsletter{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+a{
+    text-decoration: none;
+    outline: none;
+    color: inherit;
+}
