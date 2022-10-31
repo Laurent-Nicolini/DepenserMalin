@@ -1,0 +1,34 @@
+/* Importation des polices Noto sans et Oswald de Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300&family=Oswald&display=swap');
+
+/* Déclaration des polices
+font-family: 'Noto Sans', sans-serif;
+font-family: 'Oswald', sans-serif; 
+*/
+
+body{
+    /* Police des textes hors titres */
+    font-family: 'Noto Sans', sans-serif !important;
+}
+
+/* Image de fond fixe du panneau d'administration avec opacité */
+body::before{
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-image: url("../Images/admin.png");
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    opacity: 0.1;
+    z-index: -10;
+}
+
+/* Police des titres */
+h1,h2,h3,h4,h5,h6 {
+    font-family: 'Oswald', sans-serif !important;
+}
+
