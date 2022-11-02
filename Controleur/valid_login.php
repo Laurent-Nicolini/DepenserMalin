@@ -32,11 +32,15 @@ if (isset($_POST['email']) && isset($_POST['password'])){
                 exit();
             }
         }
+
+    // Retour page login.php si aucun résultat dans la base de données
     } else {
         $_SESSION['error'] = 1;
         header("Location:../login.php");
         exit();
-    }    
+    }  
+    
+// Retour page login.php si champs mal remplis
 } else {
     $_SESSION['error'] = 1;
     header("Location:../login.php");
