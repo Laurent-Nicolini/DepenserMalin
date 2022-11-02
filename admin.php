@@ -14,6 +14,11 @@ session_start();
 </head>
 <body>
     
+    <br>
+    <?php if(isset($_SESSION['pseudo'])){ ?>
+        <h4 class="text-center">Bienvenue <?=$_SESSION['pseudo'];?> ! Vous êtes bien connecté au panneau d'administration.</h4>
+    <?php }?>
+
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
