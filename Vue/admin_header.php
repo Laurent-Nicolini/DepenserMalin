@@ -18,9 +18,9 @@
         </li>
       </ul>
       <div class="row">
-        <form class="d-flex" role="search">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success" type="submit">Search</button>
+        <form class="d-flex" role="search" action="/Modele/search.php" method="POST">
+            <input class="form-control me-2" name="search" type="search" placeholder="Recherchez un article..." aria-label="Recherche">
+            <button class="btn btn-outline-primary" type="submit">Lancez la Recherche</button>
         </form>
         <div class="d-flex justify-content-end">
           <a class="text-end mt-2" href="http://depensermalin/index.php" target="_blank">Voir le site</a>
