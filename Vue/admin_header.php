@@ -22,8 +22,12 @@
             <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
             <button class="btn btn-outline-success" type="submit">Search</button>
         </form>
-        <a class="text-end mt-2" href="http://depensermalin/index.php" target="_blank">Voir le site</a>
-        <a class="text-end mt-2" href="/Controleur/deconnexion.php">Deconnexion</a>
+        <div class="d-flex justify-content-end">
+          <a class="text-end mt-2" href="http://depensermalin/index.php" target="_blank">Voir le site</a>
+        </div>
+        <div class="d-flex justify-content-end">
+          <a class="text-end mt-2" href="/Controleur/deconnexion.php">Deconnexion</a>
+        </div>
       </div>
     </div>
   </div>
