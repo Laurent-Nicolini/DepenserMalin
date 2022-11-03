@@ -1,33 +1,34 @@
-<main>
-    <div class="container">
-        <section>
-            <h1>Dépensez mieux, dépensez malin sur le Web et faites des économies!</h1>
-            <h3>Je vous dit tout...ou presque</h3>
-            <br/>
-            <p>
-                Le but principal de ce site et de vous faire prendre conscience
-                que l'on peut <strong>dépenser plus intelligement sur internet</strong> et donc 
-                <strong>faire des économies</strong>. 
-            </p>
-            <p>
-                Je vous donnerai <strong>des astuces</strong>, <strong>des bons plans</strong> (j'essayerai en tout cas) 
-                et je vous ferai (certainement) découvrir des petits sites qui n'ont 
-                rien à envier aux grands d'internet !
-            </p>
-            <p>
-                Tout ce que je vais vous dire je le tire de ma navigation insatiable sur le web,
-                de mon expérience et de ce que j'utilise au quotidien. Je surfe sur le web depuis
-                sa création, mon premier fournisseur d'accès était AOL et j'utilisais Ariane06 
-                comme moteur de recherche (Google n'était même pas né c'est dire...)
-            </p>
-            <p>
-                Mais trêve de blabla, je vous invite à visiter cet endroit sans modération !
-            </p>
-        </section>
-        <section>
+<?php
 
+// Fonction pour afficher résumé de l'article
+function Tronquer_Texte ($texte) {
+	return (strlen($texte) > 300 ? substr(substr($texte,0,300),0,strrpos(substr($texte,0,300)," ")).'...' : $texte);
+};
+
+include "Controleur/connexionbdd.php";
+
+$statement = $pdo->prepare(
+    "SELECT * FROM articles"
+);
+$statement->execute();
+$requete = $statement->fetchAll(PDO::FETCH_OBJ);
+?>
+
+<main>
+    
+        <section class="container">
+            <h2 class="text-center">Derniers Articles mis en ligne</h2>
+            <br>
+            <?php foreach($requete as $requetes){ $idarticle = $requetes->id; $texte = $requetes->texte;?>
+            <div class="container articles">
+                <div class="article">
+                    <h2><?=$requetes->titre;?></h2>
+                    <p>Date: <?=$requetes->date;?> par <?=$requetes->auteur?></p>
+                    <div><?=Tronquer_Texte($texte); ?></div>
+                </div>
+            </div><br>
+            <?php } ?>
         </section>
-    </div>
     <br/>
     <aside class="px-2">
         Les liens qui vous amènent vers des sites web extérieurs sont des liens d'affiliation,

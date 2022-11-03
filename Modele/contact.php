@@ -22,7 +22,7 @@
     <main>
         <div class="container-contact">
             <div class="image">
-                <img id="image" src="/images/contact.jpg" alt="Contactez-nous">
+                <img id="image" src="../images/contact.jpg" alt="Contactez-nous">
             </div>
             <div class="contact">
                 <h1>Contactez-nous</h1>

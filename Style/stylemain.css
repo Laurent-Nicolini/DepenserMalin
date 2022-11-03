@@ -6,6 +6,10 @@ h1{
     font-size: 5vh;
 }
 
+.articles{
+    border: 1px solid black;
+}
+
 aside{
     background: rgb(150, 150, 150);
     font-size: 2vh;
