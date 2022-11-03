@@ -9,7 +9,7 @@ session_start();
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Page d'Authentification du Panneau d'Administration DepenserMalin.com</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-    <link rel="stylesheet" href="/Style/style_admin.css">
+    <link rel="stylesheet" href="/Style/style_admin.css'">
 
 </head>
 <body>
@@ -21,11 +21,12 @@ session_start();
     <br>
 
     <!-- Message d'erreur si login ou mot de passe incorrects -->
-    <?php if ($_SESSION['error'] == 1){
+    <?php if (isset($_SESSION['error'])){
+    if ($_SESSION['error'] == 1){
         echo "
             <div class='text-center bg-danger text-white'>E-mail ou Mot de Passe incorrect, veuillez entrer des identifiants valides.</div><br>
         ";
-    }?>
+    }}?>
 
     <!-- Formulaire de connexion au panneau d'administration -->
     <div class="container">

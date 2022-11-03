@@ -28,7 +28,20 @@ body::before{
 }
 
 /* Police des titres */
-h1,h2,h3,h4,h5,h6 {
+h1, h2, h3, h4, h5, h6 {
     font-family: 'Oswald', sans-serif !important;
+}
+
+h2{
+    font-family: 'Oswald', sans-serif !important;
+}
+
+li:hover{
+    border-bottom: 1px solid black !important ;
+    color: #FF69B4 !important;
+}
+
+.articles{
+    border: 1px solid black;
 }
 
