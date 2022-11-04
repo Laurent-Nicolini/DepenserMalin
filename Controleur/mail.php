@@ -22,5 +22,5 @@ else {
     
     mail('contact@depensermalin.com',"Contact Depensermalin.com",$_POST['message'],$_POST['name'],$_POST['email']);
     $_SESSION['success'] = "Votre message a bien été envoyé ! Merci de nous avoir contacté, nous vous répondrons dans les plus brefs délais.";
-    header('Location: contact.php');
+    header('Location: ../Modele/contact.php');
 }

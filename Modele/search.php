@@ -23,7 +23,7 @@ include_once '../Controleur/connexionbdd.php';
     <?php include "../Vue/admin_header.php";?>
     <h2 class="text-center">Résultats de la Recherche: <?= $search ?></h2>
     <?php 
-    if((!$search === "") || (!$search === " ")){
+    if(($search != "")){
         $statement = $pdo->prepare(
             "SELECT * FROM articles WHERE titre LIKE :search"
         );
@@ -47,7 +47,7 @@ include_once '../Controleur/connexionbdd.php';
                 </div><br>
 
             <?php }}else {echo "<br><p class='text-center bg-warning'>Il n'y a aucun résultat pour votre recherche...</p>";}
-            } else { echo "<br><p class='text-center bg-warning'>Il n'y a aucun résultat pour votre recherche...</p>";} ?>
+            } else { echo "<br><p class='text-center bg-warning'>Vous n'avez rien rechercher...</p>";} ?>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
 </body>

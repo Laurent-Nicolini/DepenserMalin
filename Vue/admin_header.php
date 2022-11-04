@@ -18,12 +18,12 @@
         </li>
       </ul>
       <div class="row">
-        <form class="d-flex" role="search" action="/Modele/search.php" method="POST">
+        <form class="d-flex" role="search" action="http://depensermalin.demo.devshivan.com/Modele/search.php" method="POST">
             <input class="form-control me-2" name="search" type="search" placeholder="Recherchez un article..." aria-label="Recherche">
             <button class="btn btn-outline-primary" type="submit">Lancez la Recherche</button>
         </form>
         <div class="d-flex justify-content-end">
-          <a class="text-end mt-2" href="http://depensermalin/index.php" target="_blank">Voir le site</a>
+          <a class="text-end mt-2" href="http://depensermalin.demo.devshivan.com/index.php" target="_blank">Voir le site</a>
         </div>
         <div class="d-flex justify-content-end">
           <a class="text-end mt-2" href="/Controleur/deconnexion.php">Deconnexion</a>
