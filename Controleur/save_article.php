@@ -1,7 +1,7 @@
 <?php
 session_start();
-$titre = $_POST['titre'];
-$texte = $_POST['article'];
+$titre = htmlspecialchars($_POST['titre']);
+$texte = htmlspecialchars($_POST['article']);
 $auteur = "DevShivan";
 include "connexionbdd.php";
 
